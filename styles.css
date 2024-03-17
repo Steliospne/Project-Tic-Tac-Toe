@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.gameBoard {
+    width: calc(500px - 10vw);
+    height: calc(500px - 10vh);
+    display: grid;
+    grid-template-areas:
+        "cell1 spacer1 cell2 spacer2 cell3"
+        "spacer3 spacer1 . spacer2 ."
+        "cell4 spacer1 cell5 spacer2 cell6"
+        "spacer4 spacer1 . spacer2 ."
+        "cell7 spacer1 cell8 spacer2 cell9";
+        grid-template-rows: 1fr auto 1fr auto 1fr;
+        grid-template-columns: 1fr auto 1fr auto 1fr;
+}
+
+.start-button {
+    margin-bottom: 50px;
+}
+
+button.start {
+    padding: 5px 15px;
+}
+
+.footer {
+    height: min-content;
+}
+
+.gameBoard > * {
+}
+
+.cell1 {
+    grid-area: cell1;
+}
+
+.cell2 {
+    grid-area: cell2;
+}
+
+.cell3 {
+    grid-area: cell3;
+}
+
+.cell4 {
+    grid-area: cell4;
+}
+
+.cell5 {
+    grid-area: cell5;
+}
+
+.cell6 {
+    grid-area: cell6;
+}
+
+.cell7 {
+    grid-area: cell7;
+}
+
+.cell8 {
+    grid-area: cell8;
+}
+
+.cell9 {
+    grid-area: cell9;
+}
+
+.spacer1 {
+    width: 5px;
+    grid-area: spacer1;
+    background-color: cadetblue;
+}
+
+.spacer2 {
+    width: 5px;
+    grid-area: spacer2;
+    background-color: cadetblue;
+}
+
+.spacer3 {
+    height: 5px;
+    grid-area: spacer3;
+    grid-column: 1/ span 5;
+    background-color: cadetblue;
+}
+
+.spacer4 {
+    height: 5px;
+    grid-area: spacer4;
+    grid-column: 1/ span 5;
+    background-color: cadetblue;
+}
+
+@media screen and (max-width: 600px) {
+    .gameBoard {
+        width: 250px;
+        height: 250px;
+    }
+}    
