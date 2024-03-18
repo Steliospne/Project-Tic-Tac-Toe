@@ -12,19 +12,20 @@
             <h3>Tic Tac Toe</h3>
         </div>
         <div class="infoBoard">
-
+            <div class="playerTurn"></div>
+            
         </div>
         <div class="wrapper">
             <div class="gameBoard">
-                <div class="cell1"></div>
-                <div class="cell2"></div>
-                <div class="cell3"></div>
-                <div class="cell4"></div>
-                <div class="cell5"></div>
-                <div class="cell6"></div>
-                <div class="cell7"></div>
-                <div class="cell8"></div>
-                <div class="cell9"></div>
+                <div class="cell1" name="cell"></div>
+                <div class="cell2" name="cell"></div>
+                <div class="cell3" name="cell"></div>
+                <div class="cell4" name="cell"></div>
+                <div class="cell5" name="cell"></div>
+                <div class="cell6" name="cell"></div>
+                <div class="cell7" name="cell"></div>
+                <div class="cell8" name="cell"></div>
+                <div class="cell9" name="cell"></div>
                 <div class="spacer1"></div>
                 <div class="spacer2"></div>
                 <div class="spacer3"></div>
@@ -38,6 +39,27 @@
             <a href="https://github.com/Steliospne">CoadingGoat &copy;</a>
         </div>
     </div>
+
+    <dialog class="gameStart">
+        <label for="player1">Player 1</label>
+        <input type="text" name="player1" id="player1">
+
+        <label for="player2">Player 2</label>
+        <input type="text" name="player2" id="player2">
+
+        <div class="buttons">
+            <button class="ready">Ready</button>
+        </div>
+    </dialog>
+
+    <dialog class="gameEnd">
+        <div class="result"></div>
+        <div class="buttons">
+            <button class="restart">Restart</button>
+            <button class="new">New Game</button>
+        </div>
+    </dialog>
+
     <script src="script.js"></script>
 </body>
 </html>

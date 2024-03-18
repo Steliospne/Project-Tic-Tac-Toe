@@ -17,8 +17,8 @@
 }
 
 .gameBoard {
-    width: calc(500px - 10vw);
-    height: calc(500px - 10vh);
+    width: 750px;
+    height: 750px;
     display: grid;
     grid-template-areas:
         "cell1 spacer1 cell2 spacer2 cell3"
@@ -40,9 +40,6 @@ button.start {
 
 .footer {
     height: min-content;
-}
-
-.gameBoard > * {
 }
 
 .cell1 {
@@ -81,6 +78,21 @@ button.start {
     grid-area: cell9;
 }
 
+.cell1, 
+.cell2, 
+.cell3, 
+.cell4, 
+.cell5, 
+.cell6, 
+.cell7, 
+.cell8, 
+.cell9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
 .spacer1 {
     width: 5px;
     grid-area: spacer1;
@@ -107,9 +119,9 @@ button.start {
     background-color: cadetblue;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .gameBoard {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
 }    
